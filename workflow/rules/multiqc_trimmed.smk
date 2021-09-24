@@ -6,7 +6,7 @@
 
 rule multiqc_trimming:
     input:
-        expand("results/trimmed/{sample}.fastqc.zip", 
+        expand("results/trimmed/{sample}", 
                 sample = [x.replace(".fastq.gz","_fastqc.zip") for x in list(sampleFiles["R1"].append(sampleFiles["R2"]))]
             )
     output: 
