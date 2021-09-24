@@ -14,4 +14,4 @@ rule multiqc_trimming:
     log: "logs/multiqc_trimming.log"
     conda: "../envs/trimming.yaml"
     shell:
-        "multiqc --file-list {input} -n {output} > {log}"
+        "multiqc results/trimmed/ -n {output} > {log}"

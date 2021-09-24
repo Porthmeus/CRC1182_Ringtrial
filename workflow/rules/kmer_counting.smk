@@ -8,7 +8,7 @@ rule kmer_counting:
         fwd = "results/trimmed/{sample}_R1_001.fastq.gz",
         rev = "results/trimmed/{sample}_R2_001.fastq.gz"
     output:
-        temp("results/kmer/kmer_{sample}.csv")
+        "results/kmer/kmer_{sample}.csv"
     log: "logs/kmer_counting_{sample}.log"
     conda: "../envs/trimming.yaml"
     threads: 8
