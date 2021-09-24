@@ -13,7 +13,8 @@ rule main:
     input:
         expand("results/trimmed/{fwd}", fwd = list(sampleFiles["R1"])),
         expand("results/trimmed/{rev}", rev = list(sampleFiles["R2"])),
-        "results/kmer/kmer_matrix.csv"
+        "results/kmer/kmer_matrix.csv",
+        "results/QC/multiqc_trimming.html"
         
 
 

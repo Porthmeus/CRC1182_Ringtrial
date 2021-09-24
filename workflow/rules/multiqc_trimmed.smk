@@ -10,7 +10,7 @@ rule multiqc_trimming:
                 sample = [x.replace(".fastq.gz","_fastqc.zip") for x in list(sampleFiles["R1"].append(sampleFiles["R2"]))]
             )
     output: 
-        "results/QC/multqc_trimming.html"
+        "results/QC/multiqc_trimming.html"
     log: "logs/multiqc_trimming.log"
     conda: "../envs/timming.yaml"
     shell:

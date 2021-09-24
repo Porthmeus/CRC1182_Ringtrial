@@ -2,6 +2,10 @@
 # 24.09.21
 
 # simply combine the kmer table into a matrix
+log <- file(snakemake@log[[1]], open = "wt")
+sink(log)
+sink(log, type = "message")
+
 require(data.table)
 
 files = snakemake@input[[1]]
