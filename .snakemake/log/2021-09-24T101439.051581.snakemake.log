@@ -1,0 +1,4 @@
+FileNotFoundError in line 8 of /home/taube/Work/CRC_CONVR/QC_pipeline/workflow/rules/kmerCounts2Matrix.smk:
+[Errno 2] No such file or directory: 'results/kmer'
+  File "/home/taube/Work/CRC_CONVR/QC_pipeline/workflow/snakefile", line 24, in <module>
+  File "/home/taube/Work/CRC_CONVR/QC_pipeline/workflow/rules/kmerCounts2Matrix.smk", line 8, in <module>

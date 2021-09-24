@@ -1,0 +1,4 @@
+TypeError in line 5 of /home/taube/Work/CRC_CONVR/QC_pipeline/workflow/rules/fastqc_trimmed.smk:
+'method' object is not subscriptable
+  File "/home/taube/Work/CRC_CONVR/QC_pipeline/workflow/snakefile", line 20, in <module>
+  File "/home/taube/Work/CRC_CONVR/QC_pipeline/workflow/rules/fastqc_trimmed.smk", line 5, in <module>

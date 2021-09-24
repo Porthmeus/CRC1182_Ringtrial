@@ -1,0 +1,4 @@
+AttributeError in line 8 of /home/taube/Work/CRC_CONVR/QC_pipeline/workflow/rules/kmerCounts2Matrix.smk:
+module 'os' has no attribute 'list_files'
+  File "/home/taube/Work/CRC_CONVR/QC_pipeline/workflow/snakefile", line 23, in <module>
+  File "/home/taube/Work/CRC_CONVR/QC_pipeline/workflow/rules/kmerCounts2Matrix.smk", line 8, in <module>

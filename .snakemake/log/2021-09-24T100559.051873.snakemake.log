@@ -1,0 +1,3 @@
+SyntaxError in line 7 of /home/taube/Work/CRC_CONVR/QC_pipeline/workflow/rules/multiqc_trimmed.smk:
+EOF in multi-line statement (multiqc_trimmed.smk, line 7)
+  File "/home/taube/Work/CRC_CONVR/QC_pipeline/workflow/snakefile", line 21, in <module>

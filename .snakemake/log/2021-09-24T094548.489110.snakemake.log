@@ -1,0 +1,4 @@
+SyntaxError:
+Not all output, log and benchmark files of rule trimming contain the same wildcards. This is crucial though, in order to avoid that two or more jobs write to the same file.
+  File "/home/taube/Work/CRC_CONVR/QC_pipeline/workflow/snakefile", line 19, in <module>
+  File "/home/taube/Work/CRC_CONVR/QC_pipeline/workflow/rules/trimming.smk", line 23, in <module>

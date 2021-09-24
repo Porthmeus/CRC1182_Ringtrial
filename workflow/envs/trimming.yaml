@@ -1,0 +1,8 @@
+channels:
+    - conda-forge
+    - bioconda
+dependencies:
+    - trimmomatic>=0.36
+    - fastqc>=0.11.9
+    - multiqc>=1.11
+    - r-data.table>=1.14

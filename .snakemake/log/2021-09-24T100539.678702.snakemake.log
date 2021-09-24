@@ -1,0 +1,4 @@
+WorkflowError in line 21 of /home/taube/Work/CRC_CONVR/QC_pipeline/workflow/snakefile:
+Failed to open source file /home/taube/Work/CRC_CONVR/QC_pipeline/workflow/rules/multiqc_trimming.smk
+FileNotFoundError: [Errno 2] No such file or directory: '/home/taube/Work/CRC_CONVR/QC_pipeline/workflow/rules/multiqc_trimming.smk'
+  File "/home/taube/Work/CRC_CONVR/QC_pipeline/workflow/snakefile", line 21, in <module>

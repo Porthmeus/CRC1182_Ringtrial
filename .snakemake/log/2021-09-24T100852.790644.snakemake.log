@@ -1,0 +1,3 @@
+SyntaxError in line 15 of /home/taube/Work/CRC_CONVR/QC_pipeline/workflow/rules/multiqc_trimmed.smk:
+EOL while scanning string literal
+  File "/home/taube/Work/CRC_CONVR/QC_pipeline/workflow/snakefile", line 21, in <module>

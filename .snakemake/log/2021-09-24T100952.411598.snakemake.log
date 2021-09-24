@@ -1,0 +1,3 @@
+SyntaxError in line 9 of /home/taube/Work/CRC_CONVR/QC_pipeline/workflow/rules/kmer_counting.smk:
+invalid syntax
+  File "/home/taube/Work/CRC_CONVR/QC_pipeline/workflow/snakefile", line 22, in <module>

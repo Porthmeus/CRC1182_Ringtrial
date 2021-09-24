@@ -1,0 +1,33 @@
+__default__:
+    mem: 16000
+    nodes: 1
+    ntasks-per-node: 1
+    cpus-per-task: 1
+    time: "04:00:00"
+    partition: all
+    job-name: "{rule}"
+    output: "{rule}.out"
+
+trimming:
+    ntasks-per-node: 1
+    cpus-per-task: 8
+    time: "08:00:00"
+
+fastqc:
+    ntasks-per-node: 1
+    cpus-per-task: 8
+
+multiqc_trimmed:
+    ntasks-per-node: 1
+    cpus-per-task: 1
+    time: "01:00:00"
+
+kmer_counting:
+    ntasks-per-node: 1
+    cpus-per-task: 8
+
+kmerCounts2Matrix:
+    ntasks-per-node: 1
+    cpus-per-task: 1
+    time: "01:00:00"
+

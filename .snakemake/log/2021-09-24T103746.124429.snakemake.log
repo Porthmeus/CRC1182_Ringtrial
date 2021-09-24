@@ -1,0 +1,5 @@
+Building DAG of jobs...
+MissingInputException in line 4 of /home/taube/Work/CRC_CONVR/QC_pipeline/workflow/rules/trimming.smk:
+Missing input files for rule trimming:
+resources/raw/20Nov1_A01-L1_S1_L001_R1_001.fastq.gz
+resources/raw/20Nov1_A01-L1_S1_L001_R2_001.fastq.gz
