@@ -13,4 +13,4 @@ rule kmer_counting:
     conda: "../envs/trimming.yaml"
     threads: 8
     shell:
-        "jellyfish count -C -m 9 -s 100M -text -o {output} -t {threads} <(gunzip -c {input.fwd}) <(gunzip -c {input.rev}) > {log}"
+        "jellyfish count -C -m 9 -s 100M --text -o {output} -t {threads} <(gunzip -c {input.fwd}) <(gunzip -c {input.rev}) > {log}"
