@@ -17,4 +17,4 @@ rule fastqc_trimmed:
     log:
         "logs/fastqc_trimmed_{sample}.log"
     shell:
-        "fastqc {input.R1} {input.R2} -o {params.outdir} -t {threads} &> {log}"
+        "fastqc {input.fastq} -o {params.outdir} -t {threads} &> {log}"
