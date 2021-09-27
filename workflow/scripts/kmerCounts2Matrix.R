@@ -8,14 +8,16 @@ sink(log, type = "message")
 
 require(data.table)
 
-files = snakemake@input[[1]]
+files = unlist(snakemake@input)
+print(files)
 
 mat <- fread(files[1], skip=1)
-nm <- strsplit(basename(files[1]),split = "-")[[1]][1]
+nm <- gsub("^kmer","",strsplit(basename(files[1]),split = "-")[[1]][1])
 colnames(mat)[2] <- nm
+print(mat)
 
 for(f in files[-1]){
-    nm <- strsplit(basename(f),split = "-")[[1]][1]
+    nm <- gsub("^kmer_","",strsplit(basename(f),split = "-")[[1]][1])
     dt = fread(f, skip=1)
     colnames(dt)[2] <- nm
     mat <- merge(mat,dt,by="V1", all = TRUE)
